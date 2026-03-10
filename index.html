@@ -34,6 +34,7 @@
             
             <ul class="nav-links">
                 <li><a href="#about" class="active"><span class="en">About Us</span><span class="mr">आमच्याबद्दल</span></a></li>
+                <li><a href="#rates"><span class="en">Today's Rates</span><span class="mr">आजचे बाजारभाव</span></a></li>
                 <li><a href="#services"><span class="en">Services</span><span class="mr">सेवा</span></a></li>
                 <li><a href="#crops"><span class="en">Crops</span><span class="mr">शेतमाल</span></a></li>
                 <li><a href="#why-us"><span class="en">Why Choose Us</span><span class="mr">आम्हालाच का निवडावे</span></a></li>
@@ -55,6 +56,32 @@
             </div>
         </div>
         <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Today's Rates Section -->
+    <section id="rates" class="section rates bg-light">
+        <div class="container">
+            <h2 class="section-title"><span class="en">Today's Rates</span><span class="mr">आजचे बाजारभाव</span></h2>
+            <div class="table-responsive">
+                <table class="rates-table display-table">
+                    <thead>
+                        <tr>
+                            <th><span class="en">Crop</span><span class="mr">शेतमाल</span></th>
+                            <th><span class="en">Kiman (Min) ₹</span><span class="mr">किमान ₹</span></th>
+                            <th><span class="en">Kamal (Max) ₹</span><span class="mr">कमाल ₹</span></th>
+                            <th><span class="en">Sarasari (Avg) ₹</span><span class="mr">सरासरी ₹</span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="display-rates-tbody">
+                        <!-- Loaded dynamically from script.js -->
+                        <tr><td colspan="4" style="text-align:center;">Loading rates...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="rates-footer-info">
+                <small>*Rates are updated daily. Please visit the Mondha for exact prevailing market conditions.</small>
+            </p>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -220,8 +247,38 @@
         </div>
     </section>
 
+    <!-- Leadership Section -->
+    <section id="leadership" class="section leadership">
+        <div class="container">
+            <h2 class="section-title"><span class="en">Our Leaders</span><span class="mr">आमचे नेतृत्व</span></h2>
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="en">Rathod Saheb</h3>
+                    <h3 class="mr">राठोड साहेब</h3>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="en">Babasaheb Shinde</h3>
+                    <h3 class="mr">बाबासाहेब शिंदे</h3>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="en">Tukaram Shinde</h3>
+                    <h3 class="mr">तुकाराम शिंदे</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact bg-light">
         <div class="container">
             <h2 class="section-title"><span class="en">Contact Us</span><span class="mr">संपर्क साधा</span></h2>
             <div class="contact-grid">
@@ -240,7 +297,7 @@
                         <div>
                             <h4 class="en">Phone</h4>
                             <h4 class="mr">फोन</h4>
-                            <p>+91 XXXXX XXXXX<br>+91 XXXXX XXXXX</p>
+                            <p>+91 95452 35650<br>+91 93563 62145</p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -248,8 +305,8 @@
                         <div>
                             <h4 class="en">Working Hours</h4>
                             <h4 class="mr">कामकाजाची वेळ</h4>
-                            <p class="en">Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
-                            <p class="mr">सोमवार - शनिवार: सकाळी 8:00 - संध्याकाळी 6:00<br>रविवार: बंद</p>
+                            <p class="en">Monday - Saturday: 8:00 AM - 7:00 PM<br>Sunday: Closed</p>
+                            <p class="mr">सोमवार - शनिवार: सकाळी 8:00 - संध्याकाळी 7:00<br>रविवार: बंद</p>
                         </div>
                     </div>
                 </div>

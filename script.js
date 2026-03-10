@@ -77,4 +77,45 @@ document.addEventListener('DOMContentLoaded', () => {
         btnEn.classList.add('active');
         btnMr.classList.remove('active');
     });
+
+    // Load and Render Today's Rates
+    function loadTodayRates() {
+        const displayBody = document.getElementById('display-rates-tbody');
+        if (!displayBody) return; // Not on the page containing the table
+
+        const cropsList = [
+            { id: 'soybean', name_en: 'Soybean', name_mr: 'सोयाबीन' },
+            { id: 'cotton', name_en: 'Cotton', name_mr: 'कापूस' },
+            { id: 'tur', name_en: 'Tur', name_mr: 'तूर' },
+            { id: 'moong', name_en: 'Moong', name_mr: 'मूग' },
+            { id: 'wheat', name_en: 'Wheat', name_mr: 'गहू' },
+            { id: 'jowar', name_en: 'Jowar', name_mr: 'ज्वारी' },
+            { id: 'chana', name_en: 'Chana', name_mr: 'हरभरा' },
+            { id: 'maize', name_en: 'Maize', name_mr: 'मका' }
+        ];
+
+        let savedRates = {};
+        try {
+            savedRates = JSON.parse(localStorage.getItem('mtc_crop_rates')) || {};
+        } catch(e) {}
+
+        displayBody.innerHTML = ''; // Clear loading text
+
+        cropsList.forEach(crop => {
+            const cropData = savedRates[crop.id] || { kiman: '-', kamal: '-', sarasari: '-' };
+            
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>
+                    <strong><span class="en">${crop.name_en}</span><span class="mr">${crop.name_mr}</span></strong>
+                </td>
+                <td>₹ ${cropData.kiman}</td>
+                <td>₹ ${cropData.kamal}</td>
+                <td style="font-weight:600; color:var(--primary-green);">₹ ${cropData.sarasari}</td>
+            `;
+            displayBody.appendChild(tr);
+        });
+    }
+
+    loadTodayRates();
 });

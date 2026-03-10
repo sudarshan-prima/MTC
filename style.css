@@ -403,6 +403,47 @@ body {
     color: var(--text-muted);
 }
 
+/* Leadership Section */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.leader-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.leader-image {
+    width: 120px;
+    height: 120px;
+    background-color: var(--bg-light);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--primary-green);
+    border: 4px solid var(--primary-yellow);
+}
+
+.leader-card h3 {
+    color: var(--primary-green);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
 /* Contact Section */
 .contact-grid {
     display: grid;
@@ -556,4 +597,170 @@ html[lang="en"] .mr {
         order: 4;
         width: 100%;
     }
+}
+/* Admin & Table Styles */
+.admin-body {
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.admin-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+#dashboard-container {
+    max-width: 900px;
+}
+
+.admin-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.dashboard-card {
+    padding: 30px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--bg-light);
+    padding-bottom: 15px;
+}
+
+.admin-title {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+}
+
+.admin-info {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+.btn-sm {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.error-msg {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.success-msg {
+    color: var(--primary-green);
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Table Responsive Styles */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.rates-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    text-align: left;
+}
+
+.rates-table th {
+    background-color: var(--primary-green);
+    color: #ffffff;
+    padding: 15px 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.rates-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+}
+
+.rates-table tr:hover td {
+    background-color: #f9f9f9;
+}
+
+.input-table .rate-input {
+    width: 120px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-table .calc-sarasari {
+    font-weight: 600;
+    color: var(--primary-green);
+    font-size: 1.1rem;
+}
+
+.crop-name-label {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.form-actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.rates-footer-info {
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: 15px;
 }
