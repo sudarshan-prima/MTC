@@ -60,4 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Language Switcher Logic
+    const btnMr = document.getElementById('btn-mr');
+    const btnEn = document.getElementById('btn-en');
+    const htmlTag = document.documentElement;
+    
+    btnMr.addEventListener('click', () => {
+        htmlTag.lang = 'mr';
+        btnMr.classList.add('active');
+        btnEn.classList.remove('active');
+    });
+
+    btnEn.addEventListener('click', () => {
+        htmlTag.lang = 'en';
+        btnEn.classList.add('active');
+        btnMr.classList.remove('active');
+    });
 });

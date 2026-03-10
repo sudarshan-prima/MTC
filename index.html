@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mayureshwar Trading Company | Jalna Mondha</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -17,16 +15,29 @@
     <!-- Navigation -->
     <nav id="navbar" class="sticky-nav">
         <div class="nav-container">
-            <a href="#hero" class="logo">Mayureshwar Trading <span class="logo-sub">Company</span></a>
+            <a href="#hero" class="logo">
+                <span class="en">Mayureshwar Trading</span>
+                <span class="mr">मयूरेश्वर ट्रेडिंग</span>
+                <span class="logo-sub en">Company</span>
+                <span class="logo-sub mr">कंपनी</span>
+            </a>
+            
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button id="btn-mr" class="lang-btn active">मराठी</button>
+                <button id="btn-en" class="lang-btn">English</button>
+            </div>
+
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
+            
             <ul class="nav-links">
-                <li><a href="#about" class="active">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#crops">Crops</a></li>
-                <li><a href="#why-us">Why Choose Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="active"><span class="en">About Us</span><span class="mr">आमच्याबद्दल</span></a></li>
+                <li><a href="#services"><span class="en">Services</span><span class="mr">सेवा</span></a></li>
+                <li><a href="#crops"><span class="en">Crops</span><span class="mr">शेतमाल</span></a></li>
+                <li><a href="#why-us"><span class="en">Why Choose Us</span><span class="mr">आम्हालाच का निवडावे</span></a></li>
+                <li><a href="#contact"><span class="en">Contact</span><span class="mr">संपर्क</span></a></li>
             </ul>
         </div>
     </nav>
@@ -34,12 +45,13 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-content">
-            <h1>Mayureshwar Trading Company</h1>
+            <h1 class="en">Mayureshwar Trading Company</h1>
+            <h1 class="mr">मयूरेश्वर ट्रेडिंग कंपनी</h1>
             <h2 class="tagline">"शेतकऱ्यांचा विश्वासू साथीदार"</h2>
-            <p class="location"><i class="fas fa-map-marker-alt"></i> Jalna Mondha, Maharashtra</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> <span class="en">Jalna Mondha, Maharashtra</span><span class="mr">जालना मोंढा, महाराष्ट्र</span></p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Contact Us</a>
-                <a href="#about" class="btn btn-secondary">Learn More</a>
+                <a href="#contact" class="btn btn-primary"><span class="en">Contact Us</span><span class="mr">संपर्क साधा</span></a>
+                <a href="#about" class="btn btn-secondary"><span class="en">Learn More</span><span class="mr">अधिक माहिती</span></a>
             </div>
         </div>
         <div class="hero-overlay"></div>
@@ -48,15 +60,24 @@
     <!-- About Section -->
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title">About Us <span class="marathi-subtitle">आमच्याबद्दल</span></h2>
+            <h2 class="section-title"><span class="en">About Us</span><span class="mr">आमच्याबद्दल</span></h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p><strong>Mayureshwar Trading Company</strong> is a licensed commission merchant (अडतिया / Adatiya) operating at the Jalna APMC Mondha.</p>
-                    <p>We serve as a vital bridge between hardworking farmers and active buyers, ensuring fair prices and completely honest dealings for all agricultural produce.</p>
-                    <p>With years of trusted service to the farming community in Jalna district, our reputation is built on transparency, reliability, and our commitment to the prosperity of our farmers.</p>
+                    <div class="en">
+                        <p><strong>Mayureshwar Trading Company</strong> is a licensed commission merchant (अडतिया / Adatiya) operating at the Jalna APMC Mondha.</p>
+                        <p>We serve as a vital bridge between hardworking farmers and active buyers, ensuring fair prices and completely honest dealings for all agricultural produce.</p>
+                        <p>With years of trusted service to the farming community in Jalna district, our reputation is built on transparency, reliability, and our commitment to the prosperity of our farmers.</p>
+                    </div>
+                    <div class="mr">
+                        <p><strong>मयूरेश्वर ट्रेडिंग कंपनी</strong> ही जालना कृषी उत्पन्न बाजार समिती (मोंढा) येथे कार्यरत असलेली एक अधिकृत अडत व्यापारी (अडतिया) संस्था आहे.</p>
+                        <p>आम्ही कष्टाळू शेतकरी आणि सक्रिय खरेदीदार यांच्यात एक महत्त्वाचा दुवा म्हणून काम करतो, सर्व शेतमालासाठी योग्य भाव आणि पूर्णपणे प्रामाणिक व्यवहार सुनिश्चित करतो.</p>
+                        <p>जालना जिल्ह्यातील शेतकरी वर्गाला दिलेल्या वर्षांच्या विश्वासार्ह सेवेमुळे, आमची प्रतिष्ठा पारदर्शकता, विश्वासार्हता आणि शेतकऱ्यांच्या समृद्धीच्या आमच्या वचनबद्धतेवर आधारित आहे.</p>
+                    </div>
+                    
                     <div class="trust-badge">
                         <i class="fas fa-certificate"></i>
-                        <span>Licensed APMC Commission Merchant</span>
+                        <span class="en">Licensed APMC Commission Merchant</span>
+                        <span class="mr">अधिकृत कृषी उत्पन्न बाजार समिती अडत व्यापारी</span>
                     </div>
                 </div>
                 <div class="about-image">
@@ -71,27 +92,35 @@
     <!-- Services Section -->
     <section id="services" class="section services bg-light">
         <div class="container">
-            <h2 class="section-title">Our Services <span class="marathi-subtitle">आमच्या सेवा</span></h2>
+            <h2 class="section-title"><span class="en">Our Services</span><span class="mr">आमच्या सेवा</span></h2>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-balance-scale icon"></i>
-                    <h3>Crop Receiving & Weighing</h3>
-                    <p>Accurate electronic weighment and safe storage of farmers' produce upon arrival at the Mondha.</p>
+                    <h3 class="en">Crop Receiving & Weighing</h3>
+                    <h3 class="mr">शेतमाल स्वीकारणे आणि वजन करणे</h3>
+                    <p class="en">Accurate electronic weighment and safe storage of farmers' produce upon arrival at the Mondha.</p>
+                    <p class="mr">मोंढ्यात शेतमाल आल्यावर अचूक इलेक्ट्रॉनिक वजन आणि सुरक्षित साठवणूक.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-gavel icon"></i>
-                    <h3>Auction Facilitation <br><span class="marathi-sm">(Haroli / Lilav)</span></h3>
-                    <p>Conducting transparent open auctions to get the highest possible market price for your crops.</p>
+                    <h3 class="en">Auction Facilitation <br><span class="marathi-sm">(Haroli / Lilav)</span></h3>
+                    <h3 class="mr">लिलाव / हरोळी सुविधा</h3>
+                    <p class="en">Conducting transparent open auctions to get the highest possible market price for your crops.</p>
+                    <p class="mr">तुमच्या पिकांसाठी जास्तीत जास्त बाजारभाव मिळवून देण्यासाठी पारदर्शक खुल्या लिलावाचे आयोजन.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-chart-line icon"></i>
-                    <h3>Fair Price Discovery</h3>
-                    <p>Leveraging market knowledge and a large buyer network to ensure you never undersell your yield.</p>
+                    <h3 class="en">Fair Price Discovery</h3>
+                    <h3 class="mr">योग्य बाजारभाव</h3>
+                    <p class="en">Leveraging market knowledge and a large buyer network to ensure you never undersell your yield.</p>
+                    <p class="mr">बाजारपेठेचे ज्ञान आणि खरेदीदारांच्या मोठ्या नेटवर्कचा वापर करून तुम्हाला चांगला भाव मिळवून देण्याची हमी.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-rupee-sign icon"></i>
-                    <h3>Timely Payments</h3>
-                    <p>Prompt settlement of accounts and instant payment to farmers immediately after the sale is complete.</p>
+                    <h3 class="en">Timely Payments</h3>
+                    <h3 class="mr">वेळेवर पेमेंट / चुकारे</h3>
+                    <p class="en">Prompt settlement of accounts and instant payment to farmers immediately after the sale is complete.</p>
+                    <p class="mr">विक्री पूर्ण झाल्यानंतर लगेचच हिशोब आणि शेतकऱ्यांना त्वरित रोख / ऑनलाइन पेमेंट.</p>
                 </div>
             </div>
         </div>
@@ -100,47 +129,47 @@
     <!-- Crops We Deal In -->
     <section id="crops" class="section crops">
         <div class="container">
-            <h2 class="section-title">Crops We Deal In <span class="marathi-subtitle">शेतमाल प्रकार</span></h2>
+            <h2 class="section-title"><span class="en">Crops We Deal In</span><span class="mr">शेतमाल प्रकार</span></h2>
             <div class="crops-grid">
                 <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Soybean</h3>
-                    <p class="marathi-crop">सोयाबीन</p>
+                    <h3 class="en">Soybean</h3>
+                    <h3 class="mr">सोयाबीन</h3>
                 </div>
-                <div class="crop-card">
+                <!-- <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cotton</h3>
-                    <p class="marathi-crop">कापूस</p>
-                </div>
+                    <h3 class="en">Cotton</h3>
+                    <h3 class="mr">कापूस</h3>
+                </div> -->
                 <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-leaf"></i></div>
-                    <h3>Tur (Pigeon Pea)</h3>
-                    <p class="marathi-crop">तूर</p>
+                    <h3 class="en">Tur (Pigeon Pea)</h3>
+                    <h3 class="mr">तूर</h3>
                 </div>
                 <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Moong (Green Gram)</h3>
-                    <p class="marathi-crop">मूग</p>
+                    <h3 class="en">Moong (Green Gram)</h3>
+                    <h3 class="mr">मूग</h3>
                 </div>
                 <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-wheat-awn"></i></div>
-                    <h3>Wheat</h3>
-                    <p class="marathi-crop">गहू</p>
+                    <h3 class="en">Wheat</h3>
+                    <h3 class="mr">गहू</h3>
                 </div>
                 <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-seedling"></i></div>
-                    <h3>Jowar</h3>
-                    <p class="marathi-crop">ज्वारी</p>
+                    <h3 class="en">Jowar</h3>
+                    <h3 class="mr">ज्वारी</h3>
                 </div>
                 <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-cubes"></i></div>
-                    <h3>Chana (Chickpea)</h3>
-                    <p class="marathi-crop">हरभरा</p>
+                    <h3 class="en">Chana (Chickpea)</h3>
+                    <h3 class="mr">हरभरा</h3>
                 </div>
                 <div class="crop-card">
                     <div class="crop-icon"><i class="fas fa-corn"></i></div>
-                    <h3>Maize</h3>
-                    <p class="marathi-crop">मका</p>
+                    <h3 class="en">Maize</h3>
+                    <h3 class="mr">मका</h3>
                 </div>
             </div>
         </div>
@@ -149,34 +178,42 @@
     <!-- Why Choose Us -->
     <section id="why-us" class="section why-us bg-light">
         <div class="container">
-            <h2 class="section-title">Why Choose Us? <span class="marathi-subtitle">आम्हालाच का निवडावे?</span></h2>
+            <h2 class="section-title"><span class="en">Why Choose Us?</span><span class="mr">आम्हालाच का निवडावे?</span></h2>
             <div class="why-list">
                 <div class="why-item">
                     <div class="check-icon"><i class="fas fa-check-circle"></i></div>
                     <div>
-                        <h3>Licensed & Trusted</h3>
-                        <p>Authorized APMC commission agent with a pristine track record.</p>
+                        <h3 class="en">Licensed & Trusted</h3>
+                        <h3 class="mr">अधिकृत आणि विश्वासार्ह</h3>
+                        <p class="en">Authorized APMC commission merchant with a pristine track record.</p>
+                        <p class="mr">उत्तम रेकॉर्ड असलेले अधिकृत कृषी उत्पन्न बाजार समिती अडत व्यापारी.</p>
                     </div>
                 </div>
                 <div class="why-item">
                     <div class="check-icon"><i class="fas fa-check-circle"></i></div>
                     <div>
-                        <h3>Transparent Process</h3>
-                        <p>Open bidding in front of the farmer. No hidden charges or unfair deductions.</p>
+                        <h3 class="en">Transparent Process</h3>
+                        <h3 class="mr">पारदर्शक प्रक्रिया</h3>
+                        <p class="en">Open bidding in front of the farmer. No hidden charges or unfair deductions.</p>
+                        <p class="mr">शेतकऱ्यांसमोर खुली बोली. कोणतेही छुपे शुल्क किंवा अवाजवी कपात नाही.</p>
                     </div>
                 </div>
                 <div class="why-item">
                     <div class="check-icon"><i class="fas fa-check-circle"></i></div>
                     <div>
-                        <h3>District-wide Service</h3>
-                        <p>Proudly serving thousands of farmers across the Jalna district and beyond.</p>
+                        <h3 class="en">District-wide Service</h3>
+                        <h3 class="mr">संपूर्ण जिल्ह्यात सेवा</h3>
+                        <p class="en">Proudly serving thousands of farmers across the Jalna district and beyond.</p>
+                        <p class="mr">जालना जिल्हा आणि त्यापुढील हजारो शेतकऱ्यांची अभिमानाने सेवा करत आहोत.</p>
                     </div>
                 </div>
                 <div class="why-item">
                     <div class="check-icon"><i class="fas fa-check-circle"></i></div>
                     <div>
-                        <h3>Prompt Settlement</h3>
-                        <p>Guaranteed on-time payments allowing you to handle your finances smoothly.</p>
+                        <h3 class="en">Prompt Settlement</h3>
+                        <h3 class="mr">तत्पर चुकारे</h3>
+                        <p class="en">Guaranteed on-time payments allowing you to handle your finances smoothly.</p>
+                        <p class="mr">वेळेवर पैसे देण्याची हमी, ज्यामुळे तुम्हाला तुमचे आर्थिक व्यवहार सुरळीतपणे हाताळता येतात.</p>
                     </div>
                 </div>
             </div>
@@ -186,28 +223,33 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title">Contact Us <span class="marathi-subtitle">संपर्क साधा</span></h2>
+            <h2 class="section-title"><span class="en">Contact Us</span><span class="mr">संपर्क साधा</span></h2>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Address</h4>
-                            <p>Mayureshwar Trading Company,<br>New Mondha, Jalna - 431203,<br>Maharashtra, India.</p>
+                            <h4 class="en">Address</h4>
+                            <h4 class="mr">पत्ता</h4>
+                            <p class="en">Mayureshwar Trading Company,<br>New Mondha, Jalna - 431203,<br>Maharashtra, India.</p>
+                            <p class="mr">मयूरेश्वर ट्रेडिंग कंपनी,<br>न्यू मोंढा, जालना - 431203,<br>महाराष्ट्र, भारत.</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
                         <div>
-                            <h4>Phone</h4>
+                            <h4 class="en">Phone</h4>
+                            <h4 class="mr">फोन</h4>
                             <p>+91 XXXXX XXXXX<br>+91 XXXXX XXXXX</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Working Hours</h4>
-                            <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                            <h4 class="en">Working Hours</h4>
+                            <h4 class="mr">कामकाजाची वेळ</h4>
+                            <p class="en">Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                            <p class="mr">सोमवार - शनिवार: सकाळी 8:00 - संध्याकाळी 6:00<br>रविवार: बंद</p>
                         </div>
                     </div>
                 </div>
@@ -222,7 +264,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Mayureshwar Trading Company. All rights reserved.</p>
+            <p><span class="en">&copy; 2026 Mayureshwar Trading Company. All rights reserved.</span><span class="mr">&copy; २०२४ मयूरेश्वर ट्रेडिंग कंपनी. सर्व हक्क राखीव.</span></p>
             <p class="tagline-footer">शेतकऱ्यांचा विश्वासू साथीदार</p>
         </div>
     </footer>
